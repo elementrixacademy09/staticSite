@@ -1,0 +1,84 @@
+@media only screen and (max-width:991px) {
+    div#navbarNav li.nav-item {
+        border-bottom: 1px solid #ABABAB;
+    }
+
+    div#navbarNav {
+        background: #FFF;
+        z-index: 99;
+        text-align: center;
+    }
+
+    .banner-content {
+        top: 200px;
+    }
+
+    .event-content {
+        min-height: 330px;
+    }
+
+    .social-icons a {
+        font-size: 14px;
+        padding: 8px 8px;
+        margin-right: .2rem !important;
+    }
+
+
+}
+
+@media only screen and (max-width:767px) {
+
+    .footer-logo-sec,
+    .footer-address {
+        text-align: left !important;
+    }
+}
+
+@media only screen and (max-width:639px) {
+    .top-header .contact-info a:first-child {
+        display: none;
+    }
+
+    .navbar-brand img {
+        width: 140px;
+    }
+
+    header {
+        position: relative;
+    }
+
+    .banner-content {
+        top: 140px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:480px) {
+    .banner-content p {
+        margin-bottom: 0;
+    }
+
+    .hero-section h1 {
+        font-size: 18px;
+        margin-top: 0;
+    }
+
+    .corses .col-md-4 {
+        min-height: auto;
+    }
+
+    .event-card {
+        flex-direction: column;
+    }
+
+    .event-img img {
+        width: 100%;
+    }
+
+    .event-content {
+        min-height: auto;
+    }
+}
