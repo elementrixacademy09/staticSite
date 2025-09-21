@@ -85,8 +85,7 @@
                 </div>
             </div>
             <div class="hero-image">
-                <img src="./images/main-banner.jpg" alt="Students"
-                    class="img-fluid">
+                <img src="./images/main-banner.jpg" alt="Students" class="img-fluid">
             </div>
         </section>
 
@@ -151,8 +150,8 @@
                     <div class="col-md-4 animate-on-scroll">
                         <div class="course-card shadow-sm">
                             <div class="position-relative">
-                                <img src="./images/courses/02.jpg"
-                                    class="img-fluid w-100 rounded-top" alt="Custom Product Design">
+                                <img src="./images/courses/02.jpg" class="img-fluid w-100 rounded-top"
+                                    alt="Custom Product Design">
                                 <span class="price-tag">30% Off</span>
                             </div>
                             <div class="p-3 text-start">
@@ -179,8 +178,8 @@
                     <div class="col-md-4 animate-on-scroll">
                         <div class="course-card shadow-sm">
                             <div class="position-relative">
-                                <img src="./images/courses/03.jpg"
-                                    class="img-fluid w-100 rounded-top" alt="Custom Product Design">
+                                <img src="./images/courses/03.jpg" class="img-fluid w-100 rounded-top"
+                                    alt="Custom Product Design">
                                 <span class="price-tag">30% Off</span>
                             </div>
                             <div class="p-3 text-start">
@@ -208,8 +207,8 @@
                     <div class="col-md-4 animate-on-scroll">
                         <div class="course-card shadow-sm">
                             <div class="position-relative">
-                                <img src="./images/courses/08.jpg"
-                                    class="img-fluid w-100 rounded-top" alt="Custom Product Design">
+                                <img src="./images/courses/08.jpg" class="img-fluid w-100 rounded-top"
+                                    alt="Custom Product Design">
                                 <span class="price-tag">30% Off</span>
                             </div>
                             <div class="p-3 text-start">
@@ -237,8 +236,8 @@
                     <div class="col-md-4 animate-on-scroll">
                         <div class="course-card shadow-sm">
                             <div class="position-relative">
-                                <img src="./images/courses/05.jpg"
-                                    class="img-fluid w-100 rounded-top" alt="Custom Product Design">
+                                <img src="./images/courses/05.jpg" class="img-fluid w-100 rounded-top"
+                                    alt="Custom Product Design">
                                 <span class="price-tag">30% Off</span>
                             </div>
                             <div class="p-3 text-start">
@@ -266,8 +265,8 @@
                     <div class="col-md-4 animate-on-scroll">
                         <div class="course-card shadow-sm">
                             <div class="position-relative">
-                                <img src="./images/courses/06.jpg"
-                                    class="img-fluid w-100 rounded-top" alt="Custom Product Design">
+                                <img src="./images/courses/06.jpg" class="img-fluid w-100 rounded-top"
+                                    alt="Custom Product Design">
                                 <span class="price-tag">30% Off</span>
                             </div>
                             <div class="p-3 text-start">
@@ -295,8 +294,8 @@
                     <div class="col-md-4 animate-on-scroll">
                         <div class="course-card shadow-sm">
                             <div class="position-relative">
-                                <img src="./images/courses/04.jpg"
-                                    class="img-fluid w-100 rounded-top" alt="Custom Product Design">
+                                <img src="./images/courses/04.jpg" class="img-fluid w-100 rounded-top"
+                                    alt="Custom Product Design">
                                 <span class="price-tag">30% Off</span>
                             </div>
                             <div class="p-3 text-start">
@@ -655,7 +654,24 @@
                 infinite: true,
                 centerMode: true,
                 slidesToShow: 3,
-                slidesToScroll: 1
+                slidesToScroll: 1,
+                responsive: [
+                    {
+                        breakpoint: 768, // screen width <= 768px (tablet)
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    },
+                    {
+                        breakpoint: 480, // screen width <= 480px (mobile)
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                            centerMode: false // optional: turn off center mode on small screens
+                        }
+                    }
+                ]
             });
 
             $(".nav-link").on("click", function (e) {
