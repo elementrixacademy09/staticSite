@@ -53,7 +53,7 @@
 
             <nav class="navbar navbar-expand-lg navbar-light py-3">
                 <div class="container">
-                    <a class="navbar-brand fw-bold d-flex align-items-center" href="#">
+                    <a class="navbar-brand fw-bold d-flex align-items-center" href="./index.html">
                         <img src="./images/logo.png" alt="logo" class="me-2">
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -142,184 +142,259 @@
             <div class="container text-center">
                 <!-- Heading -->
                 <h2 class="fw-bold">Our Popular Courses</h2>
-                <p class="text-muted fst-italic mb-5">
+                <p class="text-muted fst-italic mb-4">
                     Choose the right course and stay ahead with structured learning and expert guidance.
                 </p>
 
-                <section class="corses">
-                    <div class="col-md-4 animate-on-scroll">
-                        <div class="course-card shadow-sm">
-                            <div class="position-relative">
-                                <img src="./images/courses/02.jpg" class="img-fluid w-100 rounded-top"
-                                    alt="Custom Product Design">
-                                <span class="price-tag">30% Off</span>
-                            </div>
-                            <div class="p-3 text-start">
-                                <span class="badge bg-dark">Foundation for Boards</span>
-                                <h5 class="fw-bold mt-2">Class 11th & 12th Science</h5>
-                                <p class="text-muted small">
-                                    Build strong fundamentals in Math, Physics, Chemistry, and Biology.
-                                </p>
-                                <div class="d-flex align-items-center justify-content-between">
-                                    <div class="d-flex align-items-center">
-                                        <!-- <img src="https://themewagon.github.io/edustage/img/courses/author1.png" class="rounded-circle me-2" width="35" height="35"
-                                                alt="Cameron"> -->
-                                        <small class="fw-semibold">Elementrix Faculty</small>
+                <!-- Tabs -->
+                <div class="mb-4 d-flex justify-content-center gap-2 tabButtons">
+                    <button class="btn btn-dark active tab-btn" data-tab-target="#tab-academic">
+                        Science & Boards
+                    </button>
+                    <button class="btn btn-outline-dark tab-btn" data-tab-target="#tab-it">
+                        IT & Programming
+                    </button>
+                </div>
+
+                <!-- TAB CONTENT WRAPPER -->
+                <div class="tab-content">
+                    <!-- TAB 1: Academic / Science / Boards -->
+                    <section class="row g-4 justify-content-center tab-pane active" id="tab-academic">
+                        <div class="inner-course row g-4 justify-content-center">
+                            <div class="col-md-4 animate-on-scroll">
+                                <div class="course-card shadow-sm">
+                                    <div class="position-relative">
+                                        <img src="./images/courses/02.jpg" class="img-fluid w-100 rounded-top"
+                                            alt="Custom Product Design">
+                                        <span class="price-tag">30% Off</span>
                                     </div>
-                                    <!-- <div class="text-muted small">
+                                    <div class="p-3 text-start">
+                                        <span class="badge bg-dark">Foundation for Boards</span>
+                                        <h5 class="fw-bold mt-2">Class 11th & 12th Science</h5>
+                                        <p class="text-muted small">
+                                            Build strong fundamentals in Math, Physics, Chemistry, and Biology.
+                                        </p>
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <div class="d-flex align-items-center">
+                                                <!-- <img src="https://themewagon.github.io/edustage/img/courses/author1.png" class="rounded-circle me-2" width="35" height="35"
+                                                alt="Cameron"> -->
+                                                <small class="fw-semibold">Elementrix Faculty</small>
+                                            </div>
+                                            <!-- <div class="text-muted small">
                                             <i class="bi bi-people me-1"></i>25
                                             <i class="bi bi-heart ms-3 me-1"></i>35
                                         </div> -->
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
 
-                    <div class="col-md-4 animate-on-scroll">
-                        <div class="course-card shadow-sm">
-                            <div class="position-relative">
-                                <img src="./images/courses/03.jpg" class="img-fluid w-100 rounded-top"
-                                    alt="Custom Product Design">
-                                <span class="price-tag">30% Off</span>
-                            </div>
-                            <div class="p-3 text-start">
-                                <span class="badge bg-dark">MHT-CET</span>
-                                <h5 class="fw-bold mt-2">PCM, PCB</h5>
-                                <p class="text-muted small">
-                                    Complete coverage of CET syllabus with concept clarity, problem-solving
-                                    sessions, and practice tests.
-                                </p>
-                                <div class="d-flex align-items-center justify-content-between">
-                                    <div class="d-flex align-items-center">
-                                        <!-- <img src="https://themewagon.github.io/edustage/img/courses/author1.png" class="rounded-circle me-2" width="35" height="35"
-                                                alt="Cameron"> -->
-                                        <small class="fw-semibold">Elementrix Faculty</small>
+                            <div class="col-md-4 animate-on-scroll">
+                                <div class="course-card shadow-sm">
+                                    <div class="position-relative">
+                                        <img src="./images/courses/03.jpg" class="img-fluid w-100 rounded-top"
+                                            alt="Custom Product Design">
+                                        <span class="price-tag">30% Off</span>
                                     </div>
-                                    <!-- <div class="text-muted small">
+                                    <div class="p-3 text-start">
+                                        <span class="badge bg-dark">MHT-CET</span>
+                                        <h5 class="fw-bold mt-2">PCM, PCB</h5>
+                                        <p class="text-muted small">
+                                            Complete coverage of CET syllabus with concept clarity, problem-solving
+                                            sessions, and practice tests.
+                                        </p>
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <div class="d-flex align-items-center">
+                                                <!-- <img src="https://themewagon.github.io/edustage/img/courses/author1.png" class="rounded-circle me-2" width="35" height="35"
+                                                alt="Cameron"> -->
+                                                <small class="fw-semibold">Elementrix Faculty</small>
+                                            </div>
+                                            <!-- <div class="text-muted small">
                                             <i class="bi bi-people me-1"></i>25
                                             <i class="bi bi-heart ms-3 me-1"></i>35
                                         </div> -->
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
 
-                    <div class="col-md-4 animate-on-scroll">
-                        <div class="course-card shadow-sm">
-                            <div class="position-relative">
-                                <img src="./images/courses/08.jpg" class="img-fluid w-100 rounded-top"
-                                    alt="Custom Product Design">
-                                <span class="price-tag">30% Off</span>
-                            </div>
-                            <div class="p-3 text-start">
-                                <span class="badge bg-dark">JEE</span>
-                                <h5 class="fw-bold mt-2">Main & Advanced</h5>
-                                <p class="text-muted small">
-                                    Step-by-step preparation with advanced problem-solving strategies to crack
-                                    engineering entrances.
-                                </p>
-                                <div class="d-flex align-items-center justify-content-between">
-                                    <div class="d-flex align-items-center">
-                                        <!-- <img src="https://themewagon.github.io/edustage/img/courses/author1.png" class="rounded-circle me-2" width="35" height="35"
-                                                alt="Cameron"> -->
-                                        <small class="fw-semibold">Elementrix Faculty</small>
+                            <div class="col-md-4 animate-on-scroll">
+                                <div class="course-card shadow-sm">
+                                    <div class="position-relative">
+                                        <img src="./images/courses/08.jpg" class="img-fluid w-100 rounded-top"
+                                            alt="Custom Product Design">
+                                        <span class="price-tag">30% Off</span>
                                     </div>
-                                    <!-- <div class="text-muted small">
+                                    <div class="p-3 text-start">
+                                        <span class="badge bg-dark">JEE</span>
+                                        <h5 class="fw-bold mt-2">Main & Advanced</h5>
+                                        <p class="text-muted small">
+                                            Step-by-step preparation with advanced problem-solving strategies to crack
+                                            engineering entrances.
+                                        </p>
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <div class="d-flex align-items-center">
+                                                <!-- <img src="https://themewagon.github.io/edustage/img/courses/author1.png" class="rounded-circle me-2" width="35" height="35"
+                                                alt="Cameron"> -->
+                                                <small class="fw-semibold">Elementrix Faculty</small>
+                                            </div>
+                                            <!-- <div class="text-muted small">
                                             <i class="bi bi-people me-1"></i>25
                                             <i class="bi bi-heart ms-3 me-1"></i>35
                                         </div> -->
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
 
-                    <div class="col-md-4 animate-on-scroll">
-                        <div class="course-card shadow-sm">
-                            <div class="position-relative">
-                                <img src="./images/courses/05.jpg" class="img-fluid w-100 rounded-top"
-                                    alt="Custom Product Design">
-                                <span class="price-tag">30% Off</span>
-                            </div>
-                            <div class="p-3 text-start">
-                                <span class="badge bg-dark">NEET</span>
-                                <h5 class="fw-bold mt-2">Biology, Chemistry & Physics</h5>
-                                <p class="text-muted small">
-                                    Intensive NEET training with emphasis on NCERT mastery, test practice, and time
-                                    management skills.
-                                </p>
-                                <div class="d-flex align-items-center justify-content-between">
-                                    <div class="d-flex align-items-center">
-                                        <!-- <img src="https://themewagon.github.io/edustage/img/courses/author1.png" class="rounded-circle me-2" width="35" height="35"
-                                                alt="Cameron"> -->
-                                        <small class="fw-semibold">Elementrix Faculty</small>
+                            <div class="col-md-4 animate-on-scroll">
+                                <div class="course-card shadow-sm">
+                                    <div class="position-relative">
+                                        <img src="./images/courses/05.jpg" class="img-fluid w-100 rounded-top"
+                                            alt="Custom Product Design">
+                                        <span class="price-tag">30% Off</span>
                                     </div>
-                                    <!-- <div class="text-muted small">
+                                    <div class="p-3 text-start">
+                                        <span class="badge bg-dark">NEET</span>
+                                        <h5 class="fw-bold mt-2">Biology, Chemistry & Physics</h5>
+                                        <p class="text-muted small">
+                                            Intensive NEET training with emphasis on NCERT mastery, test practice, and
+                                            time
+                                            management skills.
+                                        </p>
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <div class="d-flex align-items-center">
+                                                <!-- <img src="https://themewagon.github.io/edustage/img/courses/author1.png" class="rounded-circle me-2" width="35" height="35"
+                                                alt="Cameron"> -->
+                                                <small class="fw-semibold">Elementrix Faculty</small>
+                                            </div>
+                                            <!-- <div class="text-muted small">
                                             <i class="bi bi-people me-1"></i>25
                                             <i class="bi bi-heart ms-3 me-1"></i>35
                                         </div> -->
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
 
-                    <div class="col-md-4 animate-on-scroll">
-                        <div class="course-card shadow-sm">
-                            <div class="position-relative">
-                                <img src="./images/courses/06.jpg" class="img-fluid w-100 rounded-top"
-                                    alt="Custom Product Design">
-                                <span class="price-tag">30% Off</span>
-                            </div>
-                            <div class="p-3 text-start">
-                                <span class="badge bg-dark">Class 9th & 10th</span>
-                                <h5 class="fw-bold mt-2">CBSE / ICSE Boards</h5>
-                                <p class="text-muted small">
-                                    Focused coaching in Math, Physics, Chemistry, and Biology to build a strong
-                                    academic base for higher classes.
-                                </p>
-                                <div class="d-flex align-items-center justify-content-between">
-                                    <div class="d-flex align-items-center">
-                                        <!-- <img src="https://themewagon.github.io/edustage/img/courses/author1.png" class="rounded-circle me-2" width="35" height="35"
-                                                alt="Cameron"> -->
-                                        <small class="fw-semibold">Elementrix Faculty</small>
+                            <div class="col-md-4 animate-on-scroll">
+                                <div class="course-card shadow-sm">
+                                    <div class="position-relative">
+                                        <img src="./images/courses/06.jpg" class="img-fluid w-100 rounded-top"
+                                            alt="Custom Product Design">
+                                        <span class="price-tag">30% Off</span>
                                     </div>
-                                    <!-- <div class="text-muted small">
+                                    <div class="p-3 text-start">
+                                        <span class="badge bg-dark">Class 9th & 10th</span>
+                                        <h5 class="fw-bold mt-2">CBSE / ICSE Boards</h5>
+                                        <p class="text-muted small">
+                                            Focused coaching in Math, Physics, Chemistry, and Biology to build a strong
+                                            academic base for higher classes.
+                                        </p>
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <div class="d-flex align-items-center">
+                                                <!-- <img src="https://themewagon.github.io/edustage/img/courses/author1.png" class="rounded-circle me-2" width="35" height="35"
+                                                alt="Cameron"> -->
+                                                <small class="fw-semibold">Elementrix Faculty</small>
+                                            </div>
+                                            <!-- <div class="text-muted small">
                                             <i class="bi bi-people me-1"></i>25
                                             <i class="bi bi-heart ms-3 me-1"></i>35
                                         </div> -->
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
 
-                    <div class="col-md-4 animate-on-scroll">
-                        <div class="course-card shadow-sm">
-                            <div class="position-relative">
-                                <img src="./images/courses/04.jpg" class="img-fluid w-100 rounded-top"
-                                    alt="Custom Product Design">
-                                <span class="price-tag">30% Off</span>
-                            </div>
-                            <div class="p-3 text-start">
-                                <span class="badge bg-dark">Class 9th & 10th</span>
-                                <h5 class="fw-bold mt-2">State Boards</h5>
-                                <p class="text-muted small">
-                                    Focused coaching in all subjects.
-                                </p>
-                                <div class="d-flex align-items-center justify-content-between">
-                                    <div class="d-flex align-items-center">
-                                        <!-- <img src="https://themewagon.github.io/edustage/img/courses/author1.png" class="rounded-circle me-2" width="35" height="35"
-                                                alt="Cameron"> -->
-                                        <small class="fw-semibold">Elementrix Faculty</small>
+                            <div class="col-md-4 animate-on-scroll">
+                                <div class="course-card shadow-sm">
+                                    <div class="position-relative">
+                                        <img src="./images/courses/04.jpg" class="img-fluid w-100 rounded-top"
+                                            alt="Custom Product Design">
+                                        <span class="price-tag">30% Off</span>
                                     </div>
-                                    <!-- <div class="text-muted small">
+                                    <div class="p-3 text-start">
+                                        <span class="badge bg-dark">Class 9th & 10th</span>
+                                        <h5 class="fw-bold mt-2">State Boards</h5>
+                                        <p class="text-muted small">
+                                            Focused coaching in all subjects.
+                                        </p>
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <div class="d-flex align-items-center">
+                                                <!-- <img src="https://themewagon.github.io/edustage/img/courses/author1.png" class="rounded-circle me-2" width="35" height="35"
+                                                alt="Cameron"> -->
+                                                <small class="fw-semibold">Elementrix Faculty</small>
+                                            </div>
+                                            <!-- <div class="text-muted small">
                                             <i class="bi bi-people me-1"></i>25
                                             <i class="bi bi-heart ms-3 me-1"></i>35
                                         </div> -->
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </section>
 
-                </section>
+                    <!-- TAB 2: IT / Programming Courses -->
+                    <div class="row justify-content-center tab-pane d-none" id="tab-it">
+                        <div class="inner-course row g-4 justify-content-center">
+
+                            <div class="col-md-4 animate-on-scroll">
+                                <a href="./courses/IT/c.html">
+                                <div class="course-card shadow-sm">
+                                    <div class="position-relative">
+                                        <img src="./images/courses/09.jpg" class="img-fluid w-100 rounded-top"
+                                            alt="C Programming">
+                                        <span class="price-tag">New</span>
+                                    </div>
+                                    <div class="p-3 text-start">
+                                        <span class="badge bg-dark">From Beginner-Advance</span>
+                                        <h5 class="fw-bold mt-2">C Programming Fundamentals</h5>
+                                        <p class="text-muted small">
+                                            Learn C language from basics to advanced concepts with hands-on coding
+                                            for
+                                            school & competitive exams.
+                                        </p>
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <div class="d-flex align-items-center">
+                                                <small class="fw-semibold">Elementrix IT Faculty</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                </a>
+                            </div>
+
+                            <div class="col-md-4 animate-on-scroll">
+                                <a href="./courses/IT/webdevreact.html">
+                                <div class="course-card shadow-sm">
+                                    <div class="position-relative">
+                                        <img src="./images/courses/10.jpg" class="img-fluid w-100 rounded-top"
+                                            alt="Web Development">
+                                        <span class="price-tag">New</span>
+                                    </div>
+                                    <div class="p-3 text-start">
+                                        <span class="badge bg-dark">Web</span>
+                                        <h5 class="fw-bold mt-2">Web Development (HTML, CSS, JS, React JS)</h5>
+                                        <p class="text-muted small">
+                                            Learn to build basic websites using HTML, CSS & JavaScript, React –
+                                            perfect
+                                            for IT/Non-IT students.
+                                        </p>
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <div class="d-flex align-items-center">
+                                                <small class="fw-semibold">Elementrix IT Faculty</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div> <!-- /tab-content -->
             </div>
         </section>
 
@@ -582,62 +657,9 @@
         <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
-
-                    <!-- Modal Header -->
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="contactModalLabel">Contact Us</h5>
-                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
-                            aria-label="Close"></button>
-                    </div>
-
-                    <!-- Modal Body -->
-                    <div class="modal-body">
-                        <form id="contactForm">
-                            <div class="row g-3">
-                                <div class="col-md-6">
-                                    <label class="form-label">First Name<span class="mandatory">*</span></label>
-                                    <input type="text" class="form-control" id="firstName"
-                                        placeholder="Enter first name" required>
-                                </div>
-                                <div class="col-md-6">
-                                    <label class="form-label">Last Name<span class="mandatory">*</span></label>
-                                    <input type="text" class="form-control" id="lastName" placeholder="Enter last name"
-                                        required>
-                                </div>
-                                <div class="col-md-12">
-                                    <label class="form-label">Mobile No<span class="mandatory">*</span></label>
-                                    <input type="tel" class="form-control" id="mobileNo"
-                                        placeholder="Enter mobile number" required>
-                                </div>
-                                <div class="col-md-12">
-                                    <label class="form-label">Select Batch<span class="mandatory">*</span></label>
-                                    <select class="form-select" id="batch" required>
-                                        <option value="">Select...</option>
-                                        <option>11th Science</option>
-                                        <option>12th Science</option>
-                                        <option>MHT-CET</option>
-                                        <option>JEE</option>
-                                        <option>NEET</option>
-                                        <option>Class 9th-10th CBSE/ICSE</option>
-                                        <option>Class 9th-10th State Board</option>
-                                    </select>
-                                </div>
-                                <div class="col-md-12">
-                                    <label class="form-label">Your Query<span class="mandatory">*</span></label>
-                                    <textarea class="form-control" id="query" rows="3"
-                                        placeholder="Write your query here..." required></textarea>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-
-                    <!-- Modal Footer -->
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="submit" class="btn btn-primary" id="submitBtn" form="contactForm"
-                            disabled>Sent</button>
-                    </div>
-
+                    <iframe
+                        src="https://docs.google.com/forms/d/e/1FAIpQLSdAx7mPITWzjLos2V3nA-0elkHqIqaxAXd1U_REgy46i7PpOA/viewform?embedded=true"
+                        width="100%" height="600" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
                 </div>
             </div>
         </div>
@@ -739,6 +761,33 @@
 
             window.addEventListener("scroll", checkVisibility);
             checkVisibility(); // run on load
+
+            //COURSES TAB RELATED CODE
+            const tabButtons = document.querySelectorAll(".tab-btn");
+            const tabPanes = document.querySelectorAll(".tab-pane");
+
+            tabButtons.forEach(btn => {
+                btn.addEventListener("click", function () {
+                    const target = this.getAttribute("data-tab-target");
+
+                    // Toggle active class on buttons
+                    tabButtons.forEach(b => b.classList.remove("active", "btn-dark"));
+                    tabButtons.forEach(b => b.classList.add("btn-outline-dark"));
+                    this.classList.add("active", "btn-dark");
+                    this.classList.remove("btn-outline-dark");
+
+                    // Show / hide panes
+                    tabPanes.forEach(pane => {
+                        if (pane.id === target.replace("#", "")) {
+                            pane.classList.remove("d-none");
+                            pane.classList.add("active");
+                        } else {
+                            pane.classList.add("d-none");
+                            pane.classList.remove("active");
+                        }
+                    });
+                });
+            });
         });
     </script>
 
