@@ -342,53 +342,53 @@
 
                             <div class="col-md-4 animate-on-scroll">
                                 <a href="./courses/IT/c.html">
-                                <div class="course-card shadow-sm">
-                                    <div class="position-relative">
-                                        <img src="./images/courses/09.jpg" class="img-fluid w-100 rounded-top"
-                                            alt="C Programming">
-                                        <span class="price-tag">New</span>
-                                    </div>
-                                    <div class="p-3 text-start">
-                                        <span class="badge bg-dark">From Beginner-Advance</span>
-                                        <h5 class="fw-bold mt-2">C Programming Fundamentals</h5>
-                                        <p class="text-muted small">
-                                            Learn C language from basics to advanced concepts with hands-on coding
-                                            for
-                                            school & competitive exams.
-                                        </p>
-                                        <div class="d-flex align-items-center justify-content-between">
-                                            <div class="d-flex align-items-center">
-                                                <small class="fw-semibold">Elementrix IT Faculty</small>
+                                    <div class="course-card shadow-sm">
+                                        <div class="position-relative">
+                                            <img src="./images/courses/09.jpg" class="img-fluid w-100 rounded-top"
+                                                alt="C Programming">
+                                            <span class="price-tag">New</span>
+                                        </div>
+                                        <div class="p-3 text-start">
+                                            <span class="badge bg-dark">From Beginner-Advance</span>
+                                            <h5 class="fw-bold mt-2">C Programming Fundamentals</h5>
+                                            <p class="text-muted small">
+                                                Learn C language from basics to advanced concepts with hands-on coding
+                                                for
+                                                school & competitive exams.
+                                            </p>
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <div class="d-flex align-items-center">
+                                                    <small class="fw-semibold">Elementrix IT Faculty</small>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
                                 </a>
                             </div>
 
                             <div class="col-md-4 animate-on-scroll">
                                 <a href="./courses/IT/webdevreact.html">
-                                <div class="course-card shadow-sm">
-                                    <div class="position-relative">
-                                        <img src="./images/courses/10.jpg" class="img-fluid w-100 rounded-top"
-                                            alt="Web Development">
-                                        <span class="price-tag">New</span>
-                                    </div>
-                                    <div class="p-3 text-start">
-                                        <span class="badge bg-dark">Web</span>
-                                        <h5 class="fw-bold mt-2">Web Development (HTML, CSS, JS, React JS)</h5>
-                                        <p class="text-muted small">
-                                            Learn to build basic websites using HTML, CSS & JavaScript, React –
-                                            perfect
-                                            for IT/Non-IT students.
-                                        </p>
-                                        <div class="d-flex align-items-center justify-content-between">
-                                            <div class="d-flex align-items-center">
-                                                <small class="fw-semibold">Elementrix IT Faculty</small>
+                                    <div class="course-card shadow-sm">
+                                        <div class="position-relative">
+                                            <img src="./images/courses/10.jpg" class="img-fluid w-100 rounded-top"
+                                                alt="Web Development">
+                                            <span class="price-tag">New</span>
+                                        </div>
+                                        <div class="p-3 text-start">
+                                            <span class="badge bg-dark">Web</span>
+                                            <h5 class="fw-bold mt-2">Web Development (HTML, CSS, JS, React JS)</h5>
+                                            <p class="text-muted small">
+                                                Learn to build basic websites using HTML, CSS & JavaScript, React –
+                                                perfect
+                                                for IT/Non-IT students.
+                                            </p>
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <div class="d-flex align-items-center">
+                                                    <small class="fw-semibold">Elementrix IT Faculty</small>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
                                 </a>
                             </div>
 
@@ -664,6 +664,30 @@
             </div>
         </div>
 
+        <!-- Modal structure (no header/footer) -->
+        <div class="modal fade" id="adModal" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body ad-modal-body">
+                        <!-- Close icon placed inside body -->
+                        <button type="button" class="ad-close" id="adCloseBtn" aria-label="Close ad">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-x" viewBox="0 0 16 16" aria-hidden="true">
+                                <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1
+                       .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5
+                       0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+                            </svg>
+                        </button>
+
+                        <!-- Replace this image src with your ad image -->
+                        <img class="ad-image" id="adImage" src="../staticSite/images/c-batch.png" alt="Advertisement">
+
+                        <!-- If you want clickable ad, wrap image with <a href="..."> around it -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
 
     </div>
     <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
@@ -789,6 +813,86 @@
                 });
             });
         });
+    </script>
+
+    <script>
+        (function () {
+            const STORAGE_KEY = 'adModalClosed'; // sessionStorage key
+            const adModalEl = document.getElementById('adModal');
+            const adModal = new bootstrap.Modal(adModalEl, {
+                backdrop: true,
+                keyboard: true
+            });
+
+            function isClosedInSession() {
+                return sessionStorage.getItem(STORAGE_KEY) === '1';
+            }
+
+            function markClosedInSession() {
+                try {
+                    sessionStorage.setItem(STORAGE_KEY, '1');
+                } catch (err) {
+                    console.warn('sessionStorage not available', err);
+                }
+            }
+
+            function clearClosedInSession() {
+                try {
+                    sessionStorage.removeItem(STORAGE_KEY);
+                } catch (err) {
+                    console.warn('sessionStorage not available', err);
+                }
+            }
+
+            // Detect whether the page load was a reload
+            function isPageReload() {
+                try {
+                    const navEntries = performance.getEntriesByType && performance.getEntriesByType('navigation');
+                    if (navEntries && navEntries.length > 0) {
+                        // modern browsers: type can be 'navigate', 'reload', 'back_forward', 'prerender'
+                        return navEntries[0].type === 'reload';
+                    } else if (performance.navigation) {
+                        // legacy fallback: 1 = TYPE_RELOAD
+                        return performance.navigation.type === 1;
+                    }
+                } catch (e) {
+                    // if Navigation API unavailable, treat as not reload
+                }
+                return false;
+            }
+
+            window.addEventListener('DOMContentLoaded', function () {
+                // If this load is a **reload**, clear the session flag so modal will show.
+                if (isPageReload()) {
+                    clearClosedInSession();
+                    adModal.show();
+                    return;
+                }
+
+                // Otherwise (normal navigation), show only if not closed in this session
+                if (!isClosedInSession()) {
+                    adModal.show();
+                }
+            });
+
+            // Close button inside modal
+            document.getElementById('adCloseBtn').addEventListener('click', function (e) {
+                e.preventDefault();
+                markClosedInSession();
+                adModal.hide();
+            });
+
+            // If user closes modal by clicking backdrop or pressing ESC, set session flag too
+            adModalEl.addEventListener('hide.bs.modal', function (evt) {
+                // mark closed so it won't reopen while the tab is alive
+                markClosedInSession();
+            });
+
+            // Note:
+            // - sessionStorage is automatically cleared when the user closes the tab/window.
+            // - This logic treats a browser reload as a signal to reset the "closed" flag,
+            //   so the modal appears again after refresh.
+        })();
     </script>
 
 </body>

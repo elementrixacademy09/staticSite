@@ -1166,7 +1166,7 @@ section#react-batch {
     padding: 20px 0;
 }
 
-section#react-batch h2{
+section#react-batch h2 {
     text-align: center;
     margin: 20px auto 0;
 }
@@ -1184,3 +1184,84 @@ li.webdev-btns {
 /* web development react */
 
 /* Inner Pages */
+
+
+/* Adds Popup */
+/* Remove modal header/footer spacing — keep only body */
+#adModal .modal-content {
+    background: transparent;
+    /* if you want the modal content to blend, otherwise remove */
+    border: none;
+    box-shadow: none;
+}
+
+#adModal {
+    background: rgba(0, 0, 0, .6)
+}
+
+.ad-modal-body {
+    position: relative;
+    padding: 0;
+    /* we'll let the image fill */
+    border-radius: 12px;
+    /* overflow: hidden; */
+    background: white;
+    /* background behind image (optional) */
+}
+
+/* Close button inside the modal body (top-right) */
+.ad-close {
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    z-index: 20;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.85);
+    border: none;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+}
+
+.ad-close:focus {
+    outline: 2px solid #007bff;
+}
+
+/* Image should be responsive and cover the modal body */
+.ad-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    /* max-height: 80vh; */
+    object-fit: cover;
+}
+
+.ad-image img {
+    width: 100%;
+    max-height: auto;
+}
+
+/* Optional: slightly darken backdrop */
+.modal-backdrop.show {
+    background-color: rgba(0, 0, 0, 0.55);
+}
+
+/* Optional: dialog size tweak */
+@media (min-width: 992px) {
+    .modal-dialog {
+        max-width: 480px;
+    }
+}
+
+@media (max-width: 768px) {
+    .modal-dialog {
+        width: 480px;
+        max-width: 90%;
+        margin: 0 auto;
+    }
+}
+
+/* Adds Popup */
