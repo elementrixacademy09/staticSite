@@ -657,6 +657,17 @@ button.contact-us-fixed {
     padding: 0 15px;
 }
 
+@media only screen and (max-width:640px) {
+    .video-wrapper-inner {
+        flex-direction: column;
+        padding: 10px 0px;
+    }
+
+    .video-wrapper-inner .col-md-4 {
+        padding: 5px 5px;
+    }
+}
+
 /* Ticker Base */
 .ticker {
     width: 100%;
@@ -1534,90 +1545,91 @@ body {
 /* Question Sets */
 /* Main Card */
 .question-card {
-  background: #ffffff;
-  border-radius: 16px;
-  padding: 40px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
 }
 
 /* Title */
 .section-title {
-  text-align: center;
-  font-weight: 700;
-  margin-bottom: 25px;
-  color: #0f172a;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 25px;
+    color: #0f172a;
 }
 
 /* Pills Styling */
 .nav-pills .nav-link {
-  background: #eef2ff;
-  color: #1e293b;
-  border-radius: 50px;
-  padding: 10px 20px;
-  margin: 5px;
-  font-weight: 500;
-  transition: all 0.3s ease;
+    background: #eef2ff;
+    color: #1e293b;
+    border-radius: 50px;
+    padding: 10px 20px;
+    margin: 5px;
+    font-weight: 500;
+    transition: all 0.3s ease;
 }
 
 .nav-pills .nav-link:hover {
-  background: #dbeafe;
+    background: #dbeafe;
 }
 
 .nav-pills .nav-link.active {
-  background: linear-gradient(135deg, #4f46e5, #6366f1);
-  color: #fff;
-  box-shadow: 0 4px 12px rgba(79,70,229,0.3);
+    background: linear-gradient(135deg, #4f46e5, #6366f1);
+    color: #fff;
+    box-shadow: 0 4px 12px rgba(79, 70, 229, 0.3);
 }
 
 /* Grid Layout */
 .pdf-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
 }
 
 /* PDF Card */
 .pdf-card {
-  background: #f9fafb;
-  border-radius: 12px;
-  padding: 20px;
-  text-align: center;
-  transition: 0.3s;
-  border: 1px solid #e5e7eb;
+    background: #f9fafb;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    transition: 0.3s;
+    border: 1px solid #e5e7eb;
 }
 
 .pdf-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
 }
 
 /* PDF Title */
 .pdf-card h5 {
-  font-size: 16px;
-  margin-bottom: 15px;
-  color: #111827;
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: #111827;
 }
 
 /* Download Button */
 .btn-download {
-  display: inline-block;
-  padding: 8px 16px;
-  background: #4f46e5;
-  color: #fff;
-  border-radius: 8px;
-  font-size: 14px;
-  text-decoration: none;
-  transition: 0.3s;
+    display: inline-block;
+    padding: 8px 16px;
+    background: #4f46e5;
+    color: #fff;
+    border-radius: 8px;
+    font-size: 14px;
+    text-decoration: none;
+    transition: 0.3s;
 }
 
 .btn-download:hover {
-  background: #4338ca;
+    background: #4338ca;
 }
 
 /* Mobile */
 @media(max-width: 576px) {
-  .question-card {
-    padding: 20px;
-  }
+    .question-card {
+        padding: 20px;
+    }
 }
+
 /* Question Sets */
