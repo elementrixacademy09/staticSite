@@ -74,7 +74,7 @@
                             <li class="nav-item"><a class="nav-link" href="#upcoming">Upcoming</a></li>
                             <li class="nav-item"><a class="nav-link" href="#aboutus">Abouts Us</a></li>
                             <li class="nav-item"><a class="nav-link" href="#contactus">Contact</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#"><i class="bi bi-search"></i></a></li>
+                            <!-- <li class="nav-item"><a class="nav-link" href="#"><i class="bi bi-search"></i></a></li> -->
                         </ul>
                     </div>
                 </div>
@@ -86,7 +86,7 @@
                 <p class="text-uppercase small fw-semibold text-secondary">Best Education Service In Pune</p>
                 <h1 class="fw-bold display-6">One Step Ahead This Season</h1>
                 <div class="d-flex justify-content-center mt-4">
-                    <a href="#" class="btn btn-dark me-3 px-4 py-2">Learn More</a>
+                    <a href="#whyus" class="btn btn-dark me-3 px-4 py-2">Learn More</a>
                     <a href="#courses" class="btn btn-warning px-4 py-2">See Course</a>
                 </div>
             </div>
@@ -680,7 +680,7 @@
                                 strive to provide quality education, foster curiosity, and build strong academic
                                 foundations for every student.
                             </p>
-                            <a href="#" class="btn btn-primary btn-sm">Read More</a>
+                            <!-- <a href="#" class="btn btn-primary btn-sm">Read More</a> -->
                         </div>
                     </div>
 
@@ -697,7 +697,7 @@
                                 intellectually, emotionally, and socially, preparing them for academic success
                                 and lifelong learning.
                             </p>
-                            <a href="#" class="btn btn-primary btn-sm">Read More</a>
+                            <!-- <a href="#" class="btn btn-primary btn-sm">Read More</a> -->
                         </div>
                     </div>
 
@@ -714,7 +714,7 @@
                                 offering a holistic education that equips students to face the challenges of
                                 tomorrow with confidence and competence.
                             </p>
-                            <a href="#" class="btn btn-primary btn-sm">Read More</a>
+                            <!-- <a href="#" class="btn btn-primary btn-sm">Read More</a> -->
                         </div>
                     </div>
 
@@ -748,13 +748,16 @@
                         <div class="contact-info mb-3 mt-5">
                             <i class="bi bi-geo-alt-fill"></i>
                             <span>
-                                Kalyani Vastu, Infront of Karwar Samaj Hall, Samarth Nagar, Famous Chowk, New Sangavi,
+                                First Floor, Kalyani Vastu, Infront of Karwar Samaj Hall, Samarth Nagar, Famous Chowk,
+                                New Sangavi,
                                 Pune
                             </span>
                         </div>
                         <div class="contact-info">
-                            <i class="bi bi-telephone"></i>
-                            <span>7378 8378 09</span>
+                            <a href="tel:+917378837809" class="phone-no-footer">
+                                <i class="bi bi-telephone"></i>
+                                <span>7378 8378 09</span>
+                            </a>
                         </div>
                         <div class="contact-info email">
                             <i class="bi bi-envelope"></i>
@@ -871,13 +874,15 @@
         const form = document.getElementById('contactForm');
         const submitBtn = document.getElementById('submitBtn');
 
-        form.addEventListener('input', () => {
-            if (form.checkValidity()) {
-                submitBtn.disabled = false;
-            } else {
-                submitBtn.disabled = true;
-            }
-        });
+        if (form) {
+            form.addEventListener('input', () => {
+                if (form.checkValidity()) {
+                    submitBtn.disabled = false;
+                } else {
+                    submitBtn.disabled = true;
+                }
+            });
+        }
     </script>
     <!-- Add this at the end of body -->
     <script>

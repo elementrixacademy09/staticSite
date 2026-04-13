@@ -467,6 +467,11 @@ footer p {
     color: #00758f;
 }
 
+.phone-no-footer {
+    color: #FFF;
+    font-size: 15px;
+}
+
 .contact-info.email a {
     font-size: 14px;
     padding-top: 4px;
