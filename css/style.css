@@ -463,6 +463,7 @@ footer p {
     /* highlight */
 }
 
+.phone-no-footer:hover ,
 .contact-info.email a:hover {
     color: #00758f;
 }
@@ -470,6 +471,10 @@ footer p {
 .phone-no-footer {
     color: #FFF;
     font-size: 15px;
+}
+
+.phone-no-footer span {
+    padding-left: 6px;
 }
 
 .contact-info.email a {
