@@ -630,6 +630,33 @@ button.contact-us-fixed {
     box-shadow: 0 0 5px 0 #ffffff;
 }
 
+button.whatsapp-fixed {
+    position: fixed;
+    right: 1px;
+    top: 34%;
+    z-index: 99;
+    font-weight: 500;
+    width: auto;
+    display: inline-block;
+    border-radius: 2px;
+    min-height: 20px;
+    padding: 0;
+    margin: 0;
+    color: #FFF;
+    background-color: transparent;
+    border: transparent;
+    font-size: 14px;
+    rotate: 0;
+    box-shadow: 0 0 5px 0 #ffffff;
+}
+
+button.whatsapp-fixed{
+    color: #FFF;
+    padding: 4px 4px 4px 8px;
+    background: #1DAA61;
+    font-size: 18px;
+}
+
 /* Scroll-to-top button styling */
 #backToTop {
     position: fixed;
