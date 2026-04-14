@@ -650,7 +650,7 @@ button.whatsapp-fixed {
     box-shadow: 0 0 5px 0 #ffffff;
 }
 
-button.whatsapp-fixed{
+button.whatsapp-fixed a{
     color: #FFF;
     padding: 4px 4px 4px 8px;
     background: #1DAA61;
