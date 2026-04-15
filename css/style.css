@@ -463,7 +463,7 @@ footer p {
     /* highlight */
 }
 
-.phone-no-footer:hover ,
+.phone-no-footer:hover,
 .contact-info.email a:hover {
     color: #00758f;
 }
@@ -650,7 +650,7 @@ button.whatsapp-fixed {
     box-shadow: 0 0 5px 0 #ffffff;
 }
 
-button.whatsapp-fixed a{
+button.whatsapp-fixed a {
     color: #FFF;
     padding: 4px 4px 4px 8px;
     background: #1DAA61;
@@ -1670,3 +1670,124 @@ body {
 }
 
 /* Question Sets */
+
+/* faq page */
+.faq-container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 60px 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #0a2540;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.subtext {
+    text-align: center;
+    color: #6b7280;
+    margin-bottom: 40px;
+}
+
+/* FAQ Card */
+.faq-item {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 20px 24px;
+    margin-bottom: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s ease;
+    border: 1px solid #eef2f7;
+}
+
+.faq-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+}
+
+/* Question */
+.faq-question {
+    font-weight: 600;
+    font-size: 17px;
+    color: #0a2540;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* Icon */
+.faq-icon {
+    font-size: 20px;
+    color: #00758f;
+    transition: transform 0.3s ease;
+}
+
+/* Answer */
+.faq-answer {
+    margin-top: 12px;
+    color: #4b5563;
+    line-height: 1.7;
+    display: none;
+}
+
+/* Active state */
+.faq-item.active .faq-answer {
+    display: block;
+}
+
+.faq-item.active .faq-icon {
+    transform: rotate(180deg);
+}
+
+/* CTA box */
+.cta-box {
+    background: linear-gradient(135deg, #0a2540, #1e3a8a);
+    color: #fff;
+    padding: 30px;
+    border-radius: 0;
+    text-align: center;
+}
+
+.cta-box h2 {
+    margin-bottom: 10px;
+}
+
+.cta-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 22px;
+    background: #ffffff;
+    color: #0a2540;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.cta-btn:hover {
+    background: #e0e7ff;
+}
+
+.common-links {
+    width: 100%;
+    float: left;
+}
+
+.common-links ul {
+    padding-left: 16px;
+    margin-top: 15px;
+    color: #FFF;
+}
+
+.common-links ul a {
+    color: #FFF;
+}
+
+.common-links ul a:hover {
+    color: #00758f;
+}
+
+/* faq page */
