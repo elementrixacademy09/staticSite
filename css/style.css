@@ -611,9 +611,9 @@ span.mandatory {
 }
 
 button.contact-us-fixed {
-    position: fixed;
+    position: absolute;
     right: -43px;
-    top: 45%;
+    top: 75px;
     z-index: 99;
     font-weight: 500;
     width: 110px;
@@ -631,9 +631,9 @@ button.contact-us-fixed {
 }
 
 button.whatsapp-fixed {
-    position: fixed;
+    position: absolute;
     right: 1px;
-    top: 34%;
+    top: 0;
     z-index: 99;
     font-weight: 500;
     width: auto;
@@ -648,6 +648,12 @@ button.whatsapp-fixed {
     font-size: 14px;
     rotate: 0;
     box-shadow: 0 0 5px 0 #ffffff;
+}
+
+.contact-fixed-section {
+    position: fixed;
+    top: 40%;
+    right: 0;
 }
 
 button.whatsapp-fixed a {

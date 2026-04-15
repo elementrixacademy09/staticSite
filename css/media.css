@@ -82,3 +82,9 @@
         min-height: auto;
     }
 }
+
+@media only screen and (max-width:480px) {
+    .contact-fixed-section {
+        display: none;
+    }
+}
